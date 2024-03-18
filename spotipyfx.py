@@ -18,8 +18,8 @@ TRANSITION_DURATION = 5
 #Spotify setup
 def setup_spotify():
     scope = "user-read-currently-playing"
-    spotify_client_id = '218cc93bb5ba45039c105889c54e41e7'
-    spotify_client_secret = '163ac901e6464bfe86764d660f197378'
+    spotify_client_id = 'YOUR CLIENT ID'
+    spotify_client_secret = 'YOUR CLIENT SECRET'
     return spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope, client_id=spotify_client_id, client_secret=spotify_client_secret, redirect_uri=REDIRECT_URI, cache_path=CACHE_PATH))
 
 #LIFX setup
